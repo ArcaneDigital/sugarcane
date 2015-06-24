@@ -46,7 +46,9 @@ var Sugarcane = {
       Sugarcane.switchTop = Sugarcane.originalEl.getBoundingClientRect().top;
       Sugarcane.switchFloor =  Sugarcane.floorEl ? Sugarcane.floorEl.getBoundingClientRect().top : null;
       scrollIntervalID = setInterval(Sugarcane.scrollChange, 10);
-
+      window.onresize = function(event) {
+         Sugarcane.scrollChange();
+      };
     }
   }, 
   scrollChange: function(){
