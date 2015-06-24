@@ -1,6 +1,9 @@
 # sugarcane
 Micro library to turn any element into a sticky nav.
 
+## Demo
+[Sugarcane Demo](http://develop.arcane.ws/sugarcane/)
+
 ## Examples
     Sugarcane.ready({
         'target': '=aside',
